@@ -24,7 +24,7 @@
 }
 
 .user-menu__options .user-menu__link {
-  color: #c3c3c3;
+  color: #C3C3C3;
   display: inline-block;
   font-size: 1.5rem;
   padding: 1.3rem 2rem;
@@ -61,6 +61,27 @@
   display: none;
 }
 
-.user-menu:hover .show-hover {
+.user-menu:hover .show-hover,
+.user-menu:hover .user-profile__title {
   display: block;
+}
+
+.user-menu.active .show-hover,
+.user-menu.active .user-profile__title {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-menu .user-profile__title {
+    display: none;
+  }
+
+  .user-menu .user-profile__avatar {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  .user-menu__current-profile {
+    padding-top: 1.9rem;
+  }
 }

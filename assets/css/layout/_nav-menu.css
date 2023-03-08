@@ -64,6 +64,10 @@
   position: absolute;
 }
 
+.nav-submenu.nav-submenu.active{
+  display: block;
+}
+
 .nav-submenu.active {
   display: block;
 }
