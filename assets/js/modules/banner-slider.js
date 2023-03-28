@@ -150,7 +150,7 @@ function setListeners() {
     btnControls[index].addEventListener('click', function (event) {
       onControlButtonClick(event, index)
     })
-    slide.addEventListener('touchstart', function () {
+    slide.addEventListener('touchstart', function (event) {
       onTouchStart(event, index)
     })
     slide.addEventListener('touchend', onTouchEnd)

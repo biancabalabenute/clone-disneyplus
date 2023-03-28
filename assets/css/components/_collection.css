@@ -72,3 +72,26 @@
   position: absolute;
   z-index: 2;
 }
+
+@media screen and (max-width: 1024px) {
+  .collection {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .collection__title {
+    width: 85vw;
+  }
+
+  .movie-carousel__item {
+    width: calc(85vw / 2);
+  }
+
+  .movie-carousel .arrow-slider--left {
+    left: 1rem;
+  }
+
+  .movie-carousel .arrow-slider--right {
+    right: 1rem;
+  }
+}
